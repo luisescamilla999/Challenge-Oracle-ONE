@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.scss">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="logo">
+        <img src="imgs/logo.svg" alt="">
+    </div>
+    <div class="text">
+        <textarea id="text" cols="30" rows="10">ingrese el texto aqui</textarea>
+        <div id="indication-content">
+            <img src="imgs/symbol.svg" alt="">
+            <p style="width: 100%; margin-left: 8px;">Solo letras minusculas y sin acentos</p>
+        </div>
+        <div id="button-container">
+            <button id="encript-button" onclick="encript()">Encriptar</button>
+            <button id="decript-button" onclick="decript()">Desencriptar</button>
+        </div>
+    </div>
+    <div id="content-empty" class="encript-empty" >
+        <div id="encript-container">
+            <img src="imgs/emptyText.svg" alt="">
+            <p class="empty-messenge">
+                <b>Nungún mensaje fue encontrado</b>
+            </p>
+            <p class="empty-text">
+                Ingresa el texto que desees encriptar o desencriptar
+            </p>
+        </div>
+    </div>
+    <div id="content-text" class="encript" style="display: none;">
+        <div id="encript-container">
+            <p id="messenge-encript" class="empty-messenge">
+                Nungún mensaje fue encontrado
+            </p>
+            <button id="copy" class="button-text" onclick="copy()">Copiar</button>
+        </div>
+    </div>
+</body>
+<script src="js/controller.js"></script>
+</html>

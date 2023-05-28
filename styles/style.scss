@@ -1,0 +1,259 @@
+body{
+    display: flex;
+    justify-content: space-between;
+    background: #E5E5E5;
+    font-family: 'Inter';
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+#logo img{
+    padding-top: 40px;
+    padding-left: 84px;
+}
+
+.text{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+    #text{
+        color: #0a3871;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        height: 67%;
+        border: none;
+        background: none;
+        width: 85%;
+        margin-top: 168px;
+        margin-left: 84px;
+        outline: none;
+    }
+
+    #indication-content{
+        display: flex;
+        margin-left: 84px;
+        margin-right: 84px;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
+    }
+
+    #button-container{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 84px;
+        margin-right: 84px;
+        margin-top: 16px;
+        #encript-button{
+            width: 47%;
+            height: 67px;
+            padding: 24px;
+            background: #0A3871;
+            border-radius: 24px;
+            color: white;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+        }
+        #decript-button{
+            width: 47%;
+            height: 67px;
+            padding: 24px;
+            background: #D8DFE8;
+            border: 1px solid #0A3871;
+            border-radius: 24px;
+            font-size: 16px;
+            color: #0A3871;
+            line-height: 19px;
+            text-align: center;
+        }
+    }
+}
+
+
+b{
+    font-weight: bold;
+}
+
+.encript-empty{
+    #encript-container{
+        background-color: white;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        width: 400px;
+        margin: 40px;
+        height: 944px;
+        font-family: 'Inter';
+        font-style: normal;
+        display: flex;
+	    flex-direction: column;
+        justify-content: center;
+	    align-items: center;
+        .empty-messenge{
+            margin: 0px 32px;
+            margin: 0px 32px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            color: #343A40;
+        }
+
+        .empty-text{
+            font-size: 16px;
+            margin: 0px 32px;
+            margin: 0px 32px;
+            text-align: center;
+            line-height: 150%;
+            color: #495057;
+        }
+    }
+}
+
+.encript{
+    #encript-container{
+        background-color: #ffffff;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        width: 400px;
+        margin: 40px;
+        height: 944px;
+        font-family: 'Inter';
+        font-style: normal;
+        display: flex;
+	    flex-direction: column;
+        .empty-messenge{
+            margin: 0px 32px;
+            margin: 0px 32px;
+            font-size: 24px;
+            line-height: 120%;
+            color: #0A3871;
+            margin: 32px;
+            height: 100%;
+            font-family: 'Inter';
+        }
+
+        .button-text{
+            height: 67px;
+            padding: 24px;
+            background: none;
+            border: 1px solid #0A3871;
+            border-radius: 24px;
+            font-size: 16px;
+            color: #0A3871;
+            line-height: 19px;
+            text-align: center;
+            margin: 32px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #logo img{
+        padding-left: 40px;
+    }
+
+    .text{
+        margin-left: 40px;
+        margin-right: 40px;
+        width: min-content;
+
+        #text{
+            height: 67%;
+            width: 100%;
+            margin-top: 100px;
+            margin-left: 0px;
+        }
+    
+        #indication-content{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    
+        #button-container{
+            margin-left: 0px;
+            margin-top: 16px;
+            margin-right: 141px;
+            width: 100%;
+        }
+    }
+
+    .encript{
+        #encript-container{
+            height: auto;
+        }
+    }
+
+    .encript-empty{
+        #encript-container{
+            width: 100%;
+            margin: 16px;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 394px) {
+    body{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #logo img{
+        padding-left: 16px;
+    }
+
+    .text{
+        margin-left: 16px;
+        margin-right: 16px;
+        width: min-content;
+
+        #text{
+            height: 67%;
+            width: 100%;
+            margin-top: 100px;
+            margin-left: 0px;
+        }
+    
+        #indication-content{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    
+        #button-container{
+            margin-left: 0px;
+            margin-top: 16px;
+            margin-right: 141px;
+            width: 79%;
+        }
+    }
+
+    .encript{
+        #encript-container{
+            height: auto;
+            margin: 16px;
+            width: 100%;
+        }
+    }
+
+    .encript-empty{
+        #encript-container{
+            width: 100%;
+            margin: 16px;
+            height: auto;
+        }
+    }
+}
